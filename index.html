@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumen — a luminária circadiana que acompanha o ritmo natural do seu dia. Reserve sua unidade na pré-venda." />
+  <title>Lumen · Luz que pensa com você</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.squeleton.dev/squeleton.v4.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.squeleton.dev/squeleton-main.v4.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header ps-sticky top-0 z-index-111 p-15-tb">
+    <div class="container d-flex f-items-center f-justify-between">
+      <a href="#top" class="brand d-flex f-items-center f-gap-10">
+        <span class="brand-dot"></span>
+        <span class="fw-600 fs-7">Lumen</span>
+      </a>
+      <nav class="d-flex f-gap-25 fs-5 xs-d-none">
+        <a href="#product">Produto</a>
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#waitlist" class="btn btn-primary">Reservar</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero p-60-tb xs-p-30-tb">
+      <div class="container">
+        <div class="row f-items-center gap-40 md-gap-20">
+
+          <div class="c-xs-12 c-md-6 wow fadeInUp">
+            <span class="eyebrow d-inline-flex f-items-center f-gap-10 fs-4 fw-500 text-uppercase ls-2">
+              <span class="pulse-dot"></span>
+              Pré-venda encerra em breve
+            </span>
+            <h1 class="fs-16 md-fs-15 xs-fs-14 fw-400 ls-minus-1 m-20-t m-20-b">
+              Luz que pensa <em>com</em> você.
+            </h1>
+            <p class="fs-9 opacity-7 m-30-b">
+              Lumen é uma luminária circadiana que muda sozinha ao longo do dia — amanhece com você,
+              te acompanha no trabalho e relaxa no fim da noite. Sem apps complicados. Sem ajustes manuais.
+            </p>
+
+            <div class="d-flex f-gap-10 f-wrap">
+              <a href="#waitlist" class="btn btn-primary">Entrar na lista</a>
+              <a href="#product" class="btn btn-ghost">Ver produto ↓</a>
+            </div>
+
+            <div class="countdown m-40-t p-20-all border-all border-rd-16" aria-live="polite">
+              <div class="fs-3 text-uppercase ls-2 opacity-6 m-10-b">Lançamento oficial em</div>
+              <div class="d-flex f-gap-10 countdown-grid">
+                <div class="countdown-cell c-auto text-center p-10-tb border-rd-10">
+                  <div class="countdown-num fs-13" id="cd-days">00</div>
+                  <div class="fs-2 text-uppercase ls-2 opacity-6">dias</div>
+                </div>
+                <div class="countdown-cell c-auto text-center p-10-tb border-rd-10">
+                  <div class="countdown-num fs-13" id="cd-hours">00</div>
+                  <div class="fs-2 text-uppercase ls-2 opacity-6">horas</div>
+                </div>
+                <div class="countdown-cell c-auto text-center p-10-tb border-rd-10">
+                  <div class="countdown-num fs-13" id="cd-minutes">00</div>
+                  <div class="fs-2 text-uppercase ls-2 opacity-6">min</div>
+                </div>
+                <div class="countdown-cell c-auto text-center p-10-tb border-rd-10">
+                  <div class="countdown-num fs-13" id="cd-seconds">00</div>
+                  <div class="fs-2 text-uppercase ls-2 opacity-6">seg</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex f-items-center f-gap-15 f-wrap m-30-t fs-5 opacity-7">
+              <div class="avatars d-inline-flex">
+                <span class="avatar" style="--c:#f6b26b"></span>
+                <span class="avatar" style="--c:#8e7cc3"></span>
+                <span class="avatar" style="--c:#6fa8dc"></span>
+                <span class="avatar" style="--c:#e06666"></span>
+                <span class="avatar" style="--c:#93c47d"></span>
+              </div>
+              <p>
+                <strong id="waitlistCount" class="fw-600">2.847</strong> pessoas na lista ·
+                <span>desconto de 30% para os primeiros 500</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="c-xs-12 c-md-6 wow fadeIn" aria-hidden="true">
+            <div class="hero-visual m-auto-lr ps-relative">
+              <div class="lamp-glow"></div>
+              <div class="lamp-body"></div>
+              <div class="orbit orbit-1"></div>
+              <div class="orbit orbit-2"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee-section p-15-tb border-tb" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track d-inline-flex f-gap-40 fs-5 opacity-7">
+          <span>✦ Dimmer invisível</span>
+          <span>✦ 24h de autonomia</span>
+          <span>✦ Sensor de luz ambiente</span>
+          <span>✦ 1800K–6500K</span>
+          <span>✦ Carregamento USB-C</span>
+          <span>✦ Madeira FSC</span>
+          <span>✦ Dimmer invisível</span>
+          <span>✦ 24h de autonomia</span>
+          <span>✦ Sensor de luz ambiente</span>
+          <span>✦ 1800K–6500K</span>
+          <span>✦ Carregamento USB-C</span>
+          <span>✦ Madeira FSC</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT / PHASES -->
+    <section id="product" class="p-100-tb xs-p-50-tb">
+      <div class="container">
+        <div class="text-center m-auto-lr w-700px m-60-b wow fadeInUp">
+          <span class="fs-4 fw-500 text-uppercase ls-2 opacity-6">O produto</span>
+          <h2 class="fs-14 md-fs-13 xs-fs-12 fw-400 ls-minus-1 m-15-t m-20-b">Uma luz para cada momento do dia.</h2>
+          <p class="fs-9 opacity-7">
+            Lumen usa sensores e um relógio interno para ajustar temperatura e intensidade automaticamente —
+            do tom quente da manhã ao branco neutro da tarde e à luz âmbar da noite.
+          </p>
+        </div>
+
+        <div class="row gap-20">
+          <div class="c-xs-12 c-sm-6 c-md-3 wow fadeInUp" data-wow-delay="0s">
+            <article class="phase p-25-all border-all border-rd-16 h-100">
+              <div class="phase-visual phase-morning border-rd-10 m-15-b"></div>
+              <h3 class="fs-8 fw-600">Manhã</h3>
+              <p class="fs-4 opacity-6 m-5-tb">2700K · 40%</p>
+              <p class="fs-5">Luz suave para acordar sem susto.</p>
+            </article>
+          </div>
+          <div class="c-xs-12 c-sm-6 c-md-3 wow fadeInUp" data-wow-delay="0.1s">
+            <article class="phase p-25-all border-all border-rd-16 h-100">
+              <div class="phase-visual phase-day border-rd-10 m-15-b"></div>
+              <h3 class="fs-8 fw-600">Dia</h3>
+              <p class="fs-4 opacity-6 m-5-tb">5000K · 100%</p>
+              <p class="fs-5">Branco neutro para foco e leitura.</p>
+            </article>
+          </div>
+          <div class="c-xs-12 c-sm-6 c-md-3 wow fadeInUp" data-wow-delay="0.2s">
+            <article class="phase p-25-all border-all border-rd-16 h-100">
+              <div class="phase-visual phase-evening border-rd-10 m-15-b"></div>
+              <h3 class="fs-8 fw-600">Tarde</h3>
+              <p class="fs-4 opacity-6 m-5-tb">3500K · 70%</p>
+              <p class="fs-5">Transição quente para desacelerar.</p>
+            </article>
+          </div>
+          <div class="c-xs-12 c-sm-6 c-md-3 wow fadeInUp" data-wow-delay="0.3s">
+            <article class="phase p-25-all border-all border-rd-16 h-100">
+              <div class="phase-visual phase-night border-rd-10 m-15-b"></div>
+              <h3 class="fs-8 fw-600">Noite</h3>
+              <p class="fs-4 opacity-6 m-5-tb">1800K · 15%</p>
+              <p class="fs-5">Âmbar que não atrapalha o sono.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features p-100-tb xs-p-50-tb border-tb">
+      <div class="container">
+        <div class="text-center m-auto-lr w-700px m-60-b wow fadeInUp">
+          <span class="fs-4 fw-500 text-uppercase ls-2 opacity-6">Features</span>
+          <h2 class="fs-14 md-fs-13 xs-fs-12 fw-400 ls-minus-1 m-15-t">Projetada pra sumir no ambiente.</h2>
+        </div>
+
+        <div class="row gap-20">
+          <div class="c-xs-12 c-sm-6 wow fadeInUp">
+            <article class="feature-card p-30-all border-all border-rd-16 h-100">
+              <div class="feature-icon fs-13 accent m-15-b">◐</div>
+              <h3 class="fs-10 fw-600 m-10-b">Dimmer por toque</h3>
+              <p class="fs-6 opacity-7">Deslize o dedo na base de madeira pra ajustar intensidade. Sem botões, sem cliques.</p>
+            </article>
+          </div>
+          <div class="c-xs-12 c-sm-6 c-md-3 wow fadeInUp" data-wow-delay="0.1s">
+            <article class="feature-card p-30-all border-all border-rd-16 h-100">
+              <div class="feature-icon fs-13 accent m-15-b">◈</div>
+              <h3 class="fs-10 fw-600 m-10-b">Sensor ambiente</h3>
+              <p class="fs-6 opacity-7">Lê a luz do quarto e compensa — nunca forte, nunca escura demais.</p>
+            </article>
+          </div>
+          <div class="c-xs-12 c-sm-6 c-md-3 wow fadeInUp" data-wow-delay="0.2s">
+            <article class="feature-card p-30-all border-all border-rd-16 h-100">
+              <div class="feature-icon fs-13 accent m-15-b">◉</div>
+              <h3 class="fs-10 fw-600 m-10-b">24h sem fio</h3>
+              <p class="fs-6 opacity-7">Bateria interna. Leve pra cabeceira, varanda ou jantar.</p>
+            </article>
+          </div>
+          <div class="c-xs-12 c-sm-6 c-md-3 wow fadeInUp" data-wow-delay="0.3s">
+            <article class="feature-card p-30-all border-all border-rd-16 h-100">
+              <div class="feature-icon fs-13 accent m-15-b">◇</div>
+              <h3 class="fs-10 fw-600 m-10-b">USB-C universal</h3>
+              <p class="fs-6 opacity-7">Mesmo cabo do seu celular. Carga completa em 90 minutos.</p>
+            </article>
+          </div>
+          <div class="c-xs-12 c-md-3 wow fadeInUp" data-wow-delay="0.4s">
+            <article class="feature-card p-30-all border-all border-rd-16 h-100">
+              <div class="feature-icon fs-13 accent m-15-b">✧</div>
+              <h3 class="fs-10 fw-600 m-10-b">Modo foco</h3>
+              <p class="fs-6 opacity-7">Duas batidas ativam branco neutro por 90 min. Ideal pra deep work.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS -->
+    <section id="specs" class="p-100-tb xs-p-50-tb">
+      <div class="container">
+        <div class="row f-items-center gap-60 md-gap-30">
+          <div class="c-xs-12 c-md-6 wow fadeInUp">
+            <span class="fs-4 fw-500 text-uppercase ls-2 opacity-6">Especificações</span>
+            <h2 class="fs-14 md-fs-13 xs-fs-12 fw-400 ls-minus-1 m-15-t m-20-b">Feita pra durar 10 anos — no mínimo.</h2>
+            <p class="fs-9 opacity-7 m-30-b">
+              Corpo em alumínio anodizado e madeira FSC. LED de grau cirúrgico com 50.000 horas de vida útil.
+              Reparável: baterias e módulos trocáveis sob demanda.
+            </p>
+            <a href="#waitlist" class="btn btn-primary">Garantir a minha</a>
+          </div>
+
+          <div class="c-xs-12 c-md-6 wow fadeInUp" data-wow-delay="0.15s">
+            <dl class="specs-list">
+              <div class="d-flex f-justify-between p-15-tb border-b fs-5"><dt class="opacity-6">Dimensões</dt><dd class="fw-500">32 × 18 × 12 cm</dd></div>
+              <div class="d-flex f-justify-between p-15-tb border-b fs-5"><dt class="opacity-6">Peso</dt><dd class="fw-500">890 g</dd></div>
+              <div class="d-flex f-justify-between p-15-tb border-b fs-5"><dt class="opacity-6">Temperatura</dt><dd class="fw-500">1800K – 6500K</dd></div>
+              <div class="d-flex f-justify-between p-15-tb border-b fs-5"><dt class="opacity-6">Fluxo luminoso</dt><dd class="fw-500">até 1200 lúmens</dd></div>
+              <div class="d-flex f-justify-between p-15-tb border-b fs-5"><dt class="opacity-6">Bateria</dt><dd class="fw-500">5000 mAh · USB-C</dd></div>
+              <div class="d-flex f-justify-between p-15-tb border-b fs-5"><dt class="opacity-6">Materiais</dt><dd class="fw-500">alumínio + nogueira</dd></div>
+              <div class="d-flex f-justify-between p-15-tb border-b fs-5"><dt class="opacity-6">Garantia</dt><dd class="fw-500">5 anos</dd></div>
+              <div class="d-flex f-justify-between p-15-tb fs-5"><dt class="opacity-6">Produção</dt><dd class="fw-500">São Paulo, BR</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAITLIST -->
+    <section id="waitlist" class="waitlist p-100-tb xs-p-50-tb">
+      <div class="container">
+        <div class="row f-items-center gap-60 md-gap-30">
+
+          <div class="c-xs-12 c-md-6 wow fadeInUp">
+            <span class="fs-4 fw-500 text-uppercase ls-2 accent">Lista de espera</span>
+            <h2 class="fs-14 md-fs-13 xs-fs-12 fw-400 ls-minus-1 m-15-t m-20-b text-light">Entre na lista. Garanta 30% OFF.</h2>
+            <p class="fs-9 opacity-7 text-light m-30-b">
+              Apenas 500 unidades no primeiro lote. Quem entra na lista é avisado antes do público
+              e trava o desconto de lançamento.
+            </p>
+            <ul class="perks text-light fs-6">
+              <li class="p-10-tb">✓ Preço de lançamento travado (R$ 749, de R$ 1.069)</li>
+              <li class="p-10-tb">✓ Entrega prioritária em 15 dias</li>
+              <li class="p-10-tb">✓ Brinde exclusivo: bolsa de transporte</li>
+            </ul>
+          </div>
+
+          <div class="c-xs-12 c-md-6 wow fadeInUp" data-wow-delay="0.15s">
+            <form id="waitlistForm" class="waitlist-form p-30-all border-rd-20" novalidate>
+              <label for="name" class="fs-4 fw-500 d-block m-5-b">Nome</label>
+              <input type="text" id="name" name="name" class="w-100 p-15-all border-all border-rd-10 m-15-b" placeholder="Como devemos te chamar?" autocomplete="name" required />
+
+              <label for="email" class="fs-4 fw-500 d-block m-5-b">Email</label>
+              <input type="email" id="email" name="email" class="w-100 p-15-all border-all border-rd-10 m-15-b" placeholder="voce@exemplo.com" autocomplete="email" required />
+
+              <label for="interest" class="fs-4 fw-500 d-block m-5-b">O que mais te atrai?</label>
+              <select id="interest" name="interest" class="w-100 p-15-all border-all border-rd-10 m-20-b">
+                <option value="circadiano">Ritmo circadiano</option>
+                <option value="design">Design / decoração</option>
+                <option value="sono">Dormir melhor</option>
+                <option value="foco">Concentração</option>
+                <option value="outro">Outro</option>
+              </select>
+
+              <button type="submit" class="btn btn-primary w-100 ps-relative">
+                <span class="btn-label">Quero entrar na lista</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+              <p class="fs-4 text-center opacity-6 m-15-t">Sem spam. Só avisamos no dia do lançamento.</p>
+
+              <div id="formFeedback" class="form-feedback fs-5 m-15-t" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="p-100-tb xs-p-50-tb">
+      <div class="container">
+        <div class="text-center m-auto-lr w-700px m-60-b wow fadeInUp">
+          <span class="fs-4 fw-500 text-uppercase ls-2 opacity-6">FAQ</span>
+          <h2 class="fs-14 md-fs-13 xs-fs-12 fw-400 ls-minus-1 m-15-t">Perguntas frequentes.</h2>
+        </div>
+
+        <div class="faq-list w-700px m-auto-lr wow fadeInUp">
+          <details class="border-t p-20-tb">
+            <summary class="fs-8 fw-500 cursor-pointer d-flex f-justify-between f-items-center f-gap-15">
+              <span>Quando começa a entrega?</span>
+              <span class="faq-icon fs-12 opacity-6">+</span>
+            </summary>
+            <p class="fs-6 opacity-7 m-15-t">O primeiro lote começa a ser enviado 15 dias após o encerramento da pré-venda. Quem está na lista recebe prioridade.</p>
+          </details>
+          <details class="border-t p-20-tb">
+            <summary class="fs-8 fw-500 cursor-pointer d-flex f-justify-between f-items-center f-gap-15">
+              <span>Preciso instalar um app?</span>
+              <span class="faq-icon fs-12 opacity-6">+</span>
+            </summary>
+            <p class="fs-6 opacity-7 m-15-t">Não. Lumen funciona 100% sozinha. Existe um app opcional, mas 90% dos usuários nunca precisaram.</p>
+          </details>
+          <details class="border-t p-20-tb">
+            <summary class="fs-8 fw-500 cursor-pointer d-flex f-justify-between f-items-center f-gap-15">
+              <span>E se eu desistir depois?</span>
+              <span class="faq-icon fs-12 opacity-6">+</span>
+            </summary>
+            <p class="fs-6 opacity-7 m-15-t">Entrar na lista não gera cobrança. Você só paga quando confirmar a compra, com o desconto garantido.</p>
+          </details>
+          <details class="border-t p-20-tb">
+            <summary class="fs-8 fw-500 cursor-pointer d-flex f-justify-between f-items-center f-gap-15">
+              <span>Funciona em 110V e 220V?</span>
+              <span class="faq-icon fs-12 opacity-6">+</span>
+            </summary>
+            <p class="fs-6 opacity-7 m-15-t">Sim. Bivolt automático. Além disso, Lumen tem 24h de bateria — pode ficar longe da tomada.</p>
+          </details>
+          <details class="border-tb p-20-tb">
+            <summary class="fs-8 fw-500 cursor-pointer d-flex f-justify-between f-items-center f-gap-15">
+              <span>Tem garantia?</span>
+              <span class="faq-icon fs-12 opacity-6">+</span>
+            </summary>
+            <p class="fs-6 opacity-7 m-15-t">5 anos. Peças de reposição (bateria, LED, placa) vendidas por 10 anos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer p-50-t p-20-b border-t">
+    <div class="container">
+      <div class="row gap-30 m-30-b p-30-b border-b">
+        <div class="c-xs-12 c-md-4">
+          <div class="brand d-flex f-items-center f-gap-10">
+            <span class="brand-dot"></span>
+            <span class="fw-600 fs-7">Lumen</span>
+          </div>
+          <p class="fs-5 opacity-6 m-10-t">Luz que pensa com você.</p>
+        </div>
+        <div class="c-xs-12 c-md-8">
+          <div class="row gap-20">
+            <div class="c-xs-6 c-sm-4">
+              <h4 class="fs-4 fw-600 text-uppercase ls-2 m-15-b">Produto</h4>
+              <a href="#features" class="d-block fs-5 opacity-7 p-5-tb">Features</a>
+              <a href="#specs" class="d-block fs-5 opacity-7 p-5-tb">Specs</a>
+              <a href="#faq" class="d-block fs-5 opacity-7 p-5-tb">FAQ</a>
+            </div>
+            <div class="c-xs-6 c-sm-4">
+              <h4 class="fs-4 fw-600 text-uppercase ls-2 m-15-b">Empresa</h4>
+              <a href="#" class="d-block fs-5 opacity-7 p-5-tb">Sobre</a>
+              <a href="#" class="d-block fs-5 opacity-7 p-5-tb">Blog</a>
+              <a href="#" class="d-block fs-5 opacity-7 p-5-tb">Contato</a>
+            </div>
+            <div class="c-xs-12 c-sm-4">
+              <h4 class="fs-4 fw-600 text-uppercase ls-2 m-15-b">Legal</h4>
+              <a href="#" class="d-block fs-5 opacity-7 p-5-tb">Privacidade</a>
+              <a href="#" class="d-block fs-5 opacity-7 p-5-tb">Termos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center fs-4 opacity-6">© 2026 Lumen. Feito em São Paulo.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.squeleton.dev/squeleton-scripts.v4.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
